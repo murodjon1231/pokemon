@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokemon Uz</title>
+    <link rel="stylesheet" href="./main.css">
+</head>
+<body>
+    <header class="header">
+        <!-- <img src="./gif-poke.gif.png" alt=""> -->
+        <!-- <video style="height: 400px;" autoplay src="https://storage.googleapis.com/pgoblog/max-out/Dynamax_30sec_16x9_Hero.mp4"></video> -->
+        <video controls width="600">
+            <source src="https://storage.googleapis.com/pgoblog/max-out/Dynamax_30sec_16x9_Hero.mp4" type="video/mp4">
+            <source src="video.webm" type="video/webm">
+          </video>
+        <div class="search-sort">
+            <input type="text" id="searchInput" placeholder="Pokemoni qidir" />
+            <select id="typeFilter">
+                <option value="all">all</option>
+                <option value="fire">fire</option>
+                <option value="water">water</option>
+            </select>
+            <select id="sortOrder">
+                <option value="a-z">sort</option>
+                <option value="a-z">A-Z</option>
+                <option value="z-a">Z-A</option>
+            </select>
+            <button id="searchButton">search</button>
+        </div>
+    </header>
+    <main id="pokemon-container" class="pokemon-container">
+
+    </main>
+    <script src="./pokemons.js"></script>
+    <script src="./main.js"></script>
+</body>
+</html>
